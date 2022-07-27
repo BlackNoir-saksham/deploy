@@ -1,32 +1,58 @@
-
+import React, { useEffect } from "react";
+import "./App.css";
+// import firebase from "firebase";
+import Header from "./Components/Header";
 import Home from "./Components/Home";
-import About from "./Components/About";
-import Contact from "./Components/Contact";
-
-import { BrowserRouter, Router, Switch, Route, Routes } from "react-router-dom";
-
+import { HashRouter as Router, Switch, Route } from "react-router-dom";
+import Checkout from "./Components/Checkout";
+import Login from "./Components/Login";
+import { auth } from "./firebase";
+import { useStateValue } from "./Components/StateProvider";
 
 function App() {
+  const [{}, dispatch] = useStateValue();
+
+  useEffect(() => {
+    // willl run once when app loads
+    auth.onAuthStateChanged((authUser) => {
+      console.log("User is >>> ", authUser);
+
+      if (authUser) {
+        // the user just logged in or was logged in
+
+        dispatch({
+          type: "SET_USER",
+          user: authUser,
+        });
+      } else {
+        // user is logged out
+        dispatch({
+          type: "SET_USER",
+          user: null,
+        });
+      }
+    });
+  }, []);
+
   return (
-    <div className="App">
-       <BrowserRouter>
-       <div className="App">
-         
-         <Switch>
-           <Route path="/">
-             <Home />
-           </Route>
-           <Route path="/contact">
-             <Contact />
-           </Route>
-           <Route path="/about">
-             <About />
-           </Route>
-         </Switch>
-       </div>
-     </BrowserRouter>
-     <h4>saksham srivastava</h4>
-    </div>
+    <Router>
+      <div className="app">
+        <Switch>
+          <Route path="/login">
+            <Login />
+          </Route>
+          <Route path="/checkout">
+            <Header />
+            <Checkout />
+          </Route>
+
+          <Route path="/">
+            <Header />
+            <Home />
+          </Route>
+        </Switch>
+      </div>
+    </Router>
   );
 }
 

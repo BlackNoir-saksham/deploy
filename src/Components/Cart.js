@@ -1,18 +1,17 @@
-import React from "react";
+import React from 'react'
+import Checkout from './Checkout';
+import './Cart.css'
 
-function Cart({ open, children, onClose }) {
-  if (open === false) {
-    return null;
-  }
+function Cart({open, onClose}) {
+    if(open===false){
+        return null;
+    }
   return (
-    <>
-      <h1>{children}</h1>
-
-      <h1>
-        <button onClick={onClose}>Close</button>
-      </h1>
-    </>
-  );
+    <div className='cart__checkout'>
+        <Checkout/>
+        <h1><button onClick={onClose}>Close</button></h1>
+    </div>
+  )
 }
 
-export default Cart;
+export default Cart
