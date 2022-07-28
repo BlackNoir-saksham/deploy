@@ -1,17 +1,17 @@
 {
   "files": {
-    "main.css": "/deploy/static/css/main.3900f5a0.css",
-    "main.js": "/deploy/static/js/main.9eb0cf42.js",
+    "main.css": "/deploy/static/css/main.d7625d6a.css",
+    "main.js": "/deploy/static/js/main.12b8cda1.js",
     "static/media/banner_final.png": "/deploy/static/media/banner_final.c9d0704a97189848144f.png",
     "static/media/ad.png": "/deploy/static/media/ad.e123cbeacf5d463d354d.png",
     "static/media/amazon-logo-transparent.png": "/deploy/static/media/amazon-logo-transparent.9777e5d76b6cc832f98c.png",
     "static/media/realme.jpg": "/deploy/static/media/realme.7b698d45401d1c8a9ae3.jpg",
     "index.html": "/deploy/index.html",
-    "main.3900f5a0.css.map": "/deploy/static/css/main.3900f5a0.css.map",
-    "main.9eb0cf42.js.map": "/deploy/static/js/main.9eb0cf42.js.map"
+    "main.d7625d6a.css.map": "/deploy/static/css/main.d7625d6a.css.map",
+    "main.12b8cda1.js.map": "/deploy/static/js/main.12b8cda1.js.map"
   },
   "entrypoints": [
-    "static/css/main.3900f5a0.css",
-    "static/js/main.9eb0cf42.js"
+    "static/css/main.d7625d6a.css",
+    "static/js/main.12b8cda1.js"
   ]
 }
