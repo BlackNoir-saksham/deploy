@@ -1,17 +1,31 @@
 {
   "files": {
-    "main.css": "/deploy/static/css/main.d7625d6a.css",
-    "main.js": "/deploy/static/js/main.12b8cda1.js",
+    "main.css": "/deploy/static/css/main.41d6fa2e.css",
+    "main.js": "/deploy/static/js/main.45a7c940.js",
     "static/media/banner_final.png": "/deploy/static/media/banner_final.c9d0704a97189848144f.png",
+    "static/media/nike.jpg": "/deploy/static/media/nike.86507628a13f8c7f19b5.jpg",
     "static/media/ad.png": "/deploy/static/media/ad.e123cbeacf5d463d354d.png",
+    "static/media/stickers.jpg": "/deploy/static/media/stickers.cf0a86f693c1432cf1ed.jpg",
+    "static/media/rog.jpg": "/deploy/static/media/rog.9f82ad56a0c87b5ce6c2.jpg",
+    "static/media/samsung1.jpg": "/deploy/static/media/samsung1.28d0badc3eb83936fbcc.jpg",
+    "static/media/mi.jpg": "/deploy/static/media/mi.d3812ac22193b0f53c95.jpg",
+    "static/media/led.jpg": "/deploy/static/media/led.e0ae05042bd668d7da2a.jpg",
+    "static/media/perfume.jpg": "/deploy/static/media/perfume.4034869a992c9d16f1dc.jpg",
+    "static/media/tshirt.jpg": "/deploy/static/media/tshirt.204bd1dfebd6f147d352.jpg",
+    "static/media/oneplus.jpg": "/deploy/static/media/oneplus.b6e65a181836adbf5357.jpg",
+    "static/media/headphone.jpeg": "/deploy/static/media/headphone.d627162f003bd91075bc.jpeg",
+    "static/media/watch.jpg": "/deploy/static/media/watch.bfc7f2830a7050d58570.jpg",
+    "static/media/apple.jpg": "/deploy/static/media/apple.98a7a3d50a30a3f6ef78.jpg",
     "static/media/amazon-logo-transparent.png": "/deploy/static/media/amazon-logo-transparent.9777e5d76b6cc832f98c.png",
-    "static/media/realme.jpg": "/deploy/static/media/realme.7b698d45401d1c8a9ae3.jpg",
+    "static/media/dress.jpg": "/deploy/static/media/dress.21639fbd6f29b85c66bf.jpg",
+    "static/media/4k.jpg": "/deploy/static/media/4k.631d10d1b50ccd103406.jpg",
+    "static/media/guitar.jpg": "/deploy/static/media/guitar.8dd083ba7ef325aeffd9.jpg",
     "index.html": "/deploy/index.html",
-    "main.d7625d6a.css.map": "/deploy/static/css/main.d7625d6a.css.map",
-    "main.12b8cda1.js.map": "/deploy/static/js/main.12b8cda1.js.map"
+    "main.41d6fa2e.css.map": "/deploy/static/css/main.41d6fa2e.css.map",
+    "main.45a7c940.js.map": "/deploy/static/js/main.45a7c940.js.map"
   },
   "entrypoints": [
-    "static/css/main.d7625d6a.css",
-    "static/js/main.12b8cda1.js"
+    "static/css/main.41d6fa2e.css",
+    "static/js/main.45a7c940.js"
   ]
 }
