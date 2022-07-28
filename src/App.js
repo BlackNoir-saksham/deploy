@@ -6,11 +6,12 @@ import Home from "./Components/Home";
 import { HashRouter as Router, Switch, Route } from "react-router-dom";
 import Checkout from "./Components/Checkout";
 import Login from "./Components/Login";
+import Payment from "./Components/Payment";
 import { auth } from "./firebase";
 import { useStateValue } from "./Components/StateProvider";
 
 function App() {
-  const [{}, dispatch] = useStateValue();
+  const [, dispatch] = useStateValue();
 
   useEffect(() => {
     // willl run once when app loads
@@ -44,6 +45,9 @@ function App() {
           <Route path="/checkout">
             <Header />
             <Checkout />
+          </Route>
+          <Route path="/payment">
+            <Payment />
           </Route>
 
           <Route path="/">

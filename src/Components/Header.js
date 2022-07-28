@@ -1,15 +1,22 @@
 import React from "react";
-import Cart from "./Cart";
-// import ShoppingBasketIcon from "@mui/icons-material/ShoppingBasket";
-// import SearchSharpIcon from "@mui/icons-material/SearchSharp";
+
+// import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+// import { faCartArrowDown } from "@fortawesome/free-solid-svg-icons";
+import {FiShoppingCart} from 'react-icons/fi'
+import {BsSearch} from 'react-icons/bs'
 import "./Header.css";
 import { Link } from "react-router-dom";
 import { useStateValue } from "./StateProvider";
-
+import { auth } from "../firebase";
 
 function Header() {
-  
-  const [{ basket }] = useStateValue();
+  const handleAuthentication = () => {
+    if (user) {
+      auth.signOut();
+    }
+  };
+
+  const [{ basket, user }] = useStateValue();
 
   return (
     <div className="header">
@@ -23,14 +30,16 @@ function Header() {
 
       <div className="header__search">
         <input className="header__searchInput" type="text" />
-        {/* <SearchSharpIcon className="header__searchIcon" /> */}
+        <BsSearch className="header__searchIcon" />
       </div>
 
       <div className="header__nav">
-        <Link to='/login'>
-          <div className="header__option">
-            <span className="header__option__1">Hello Guest</span>
-            <span className="header__option__2">Sign in</span>
+        <Link to={!user && "/login"}>
+          <div onClick={handleAuthentication} className="header__option">
+            <span className="header__option__1">{user? 'Hello' :'Hello Guest'} {user?.email}</span>
+            <span className="header__option__2">
+              {user ? "Sign-Out" : "Sign-In"}
+            </span>
           </div>
         </Link>
 
@@ -45,12 +54,8 @@ function Header() {
 
         <Link to="/checkout">
           <div className="header__basket">
-            {/* <ShoppingBasketIcon onClick={() => setIsOpen(true)} /> */}
-            <button>cart</button>
-
-        
-
-            <span className="header__basketCount">{basket?.length}</span>
+            <FiShoppingCart className = "cart__icon" ></FiShoppingCart>
+             <span className="header__basketCount">{basket?.length}</span>
           </div>
         </Link>
       </div>

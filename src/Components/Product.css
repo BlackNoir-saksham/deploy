@@ -10,6 +10,12 @@
     min-width: 100px;
     background-color: white;
     z-index: 1;
+    transition: transform .2s;
+
+}
+.product:hover{
+    transform: scale(1.06);
+    box-shadow: 0 0 12px rgba(17, 124, 212, 0.516); 
 }
 
 .image{
