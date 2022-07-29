@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/deploy/static/css/main.41d6fa2e.css",
+    "main.css": "/deploy/static/css/main.bd1ca376.css",
     "main.js": "/deploy/static/js/main.45a7c940.js",
     "static/media/banner_final.png": "/deploy/static/media/banner_final.c9d0704a97189848144f.png",
     "static/media/nike.jpg": "/deploy/static/media/nike.86507628a13f8c7f19b5.jpg",
@@ -21,11 +21,11 @@
     "static/media/4k.jpg": "/deploy/static/media/4k.631d10d1b50ccd103406.jpg",
     "static/media/guitar.jpg": "/deploy/static/media/guitar.8dd083ba7ef325aeffd9.jpg",
     "index.html": "/deploy/index.html",
-    "main.41d6fa2e.css.map": "/deploy/static/css/main.41d6fa2e.css.map",
+    "main.bd1ca376.css.map": "/deploy/static/css/main.bd1ca376.css.map",
     "main.45a7c940.js.map": "/deploy/static/js/main.45a7c940.js.map"
   },
   "entrypoints": [
-    "static/css/main.41d6fa2e.css",
+    "static/css/main.bd1ca376.css",
     "static/js/main.45a7c940.js"
   ]
 }
