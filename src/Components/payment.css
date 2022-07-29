@@ -44,7 +44,7 @@
   .payment__btn{
     background: #f0c14b;
     border-radius: 2px;
-    width: 4%;
+    /* width: 4%; */
     height: 28px;
     border: 1px solid;
     /* margin-top: 10px; */
